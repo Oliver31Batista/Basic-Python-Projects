@@ -6,12 +6,12 @@ def play():
     computer = random.choice(['rock', 'paper', 'scissors'])
 
     if user == computer:
-        return '¡TIE!'
+        return print(f'{user} vs {computer} = ¡TIE!')
     
     if player_win(user, computer):
-        return '¡YOU WIN!'
+        return print(f'{user} vs {computer} = ¡YOU WIN!')
 
-    return '¡YOU LOSE!'
+    return print(f'{user} vs {computer} = ¡YOU LOSE!')
 
 
 def player_win(user, opponent):
@@ -23,4 +23,4 @@ def player_win(user, opponent):
         return False
 
 
-print(play())
+play()
